@@ -1,0 +1,138 @@
+<!--申明了一个标准的html5文档类型-->
+<!DOCTYPE html>
+<!--申明这个文档是一个中文简体语言的文本 在一些非这类语言的机器上 浏览器可识别 -->
+<html lang="zh-CN">
+<head>
+    <!--申明页面的字符编码是 utf-8 -->
+    <meta charset="utf-8">
+    <!-- 申明IE浏览器需要用最新的渲染引擎来渲染当前的页面 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--
+        视口 只有移动端才识别 申明了申明？
+        width 申明视口的宽度等于设备的宽度
+        initial-scale 申明的是 默认的初始缩放比 1：1 也就是等比显示在移动端
+        user-scalable 不允许用户自行缩放
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <!-- 核心css文件 -->
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!--在不支持  html5标签的浏览器和不支持media查询的浏览器我们使用的是下面连个js插件来做兼容 -->
+    <!-- 有条件注释  在ie9以下的版本浏览器 使用下面两个js文件 -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--  注意  要在http形式下打开 页面 才能正常使用下面两个文件-->
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.js"></script>
+    <![endif]-->
+
+    <!--自己的css文件-->
+    <link rel="stylesheet" href="css/demo.css"/>
+
+</head>
+<body>
+
+<!--<div class="news">-->
+    <!--<div class="container" >-->
+        <!--<div class="row" >-->
+            <!--<ul style="background: pink;">-->
+<!--<li class="col-lg-4 col-md-6 col-xs-12 wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.1s" style="visibility: visible;-webkit-animation-duration: 1s;-moz-animation-duration: 1s;animation-duration: 1s;-webkit-animation-delay: 0.1s;-moz-animation-delay: 0.1s;animation-delay: 0.1s;background: pink;">-->
+                    <!--<a class="trans-8" href="#" title="拓元建设第二次股东大会在总部举行">-->
+                        <!--<div class=" picbox"><img class="trans-12" src="images/1-1G00916252a55.jpg" alt="拓元建设第二次股东大会在总部举行" title="拓元建设第二次股东大会在总部举行"></div>-->
+                        <!--<div class=" text">-->
+                            <!--<span class="trans-3 block date">2017-10-27</span>-->
+                            <!--<h5 class="trans-3 ellipsis">拓元建设第二次股东大会在总部举行</h5>-->
+                            <!--<p class="trans-3">2017年10月27日在湖北拓元建设工程有限公司总部举行了第二次拓元建设股东大会。....</p>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</li>-->
+<!--<li class="col-lg-4 col-md-6 col-xs-12 wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.1s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">-->
+                <!--<a class="trans-8" href="/news/company/2017/1016/93.html" title="拓元建设告诉你工装公司究竟做些什么">-->
+                    <!--<div class=" picbox"><img class="trans-12" src="images/1-1G00916252a55.jpg" alt="拓元建设告诉你工装公司究竟做些什么" title="拓元建设告诉你工装公司究竟做些什么"></div>-->
+                    <!--<div class=" text">-->
+                        <!--<span class="trans-3 block date">2017-10-16</span>-->
+                        <!--<h5 class="trans-3 ellipsis">拓元建设告诉你工装公司究竟做些什么</h5>-->
+                        <!--<p class="trans-3">现如今工装行业涉及领域越来越广泛，包括酒店装修、写字楼办公室装修、娱乐会所装修、餐饮业装修、幼儿园教学楼装修等等、也因此诞生了很多的工装公司。那么，作为一家武汉本....</p>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</li>-->
+<!--<li class="col-lg-4 col-md-6 col-xs-12 wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.1s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">-->
+                <!--<a class="trans-8" href="/news/company/2017/0930/77.html" title="关于2017年国庆、中秋双节放假安排通知">-->
+                    <!--<div class=" picbox"><img class="trans-12" src="images/1-1G00916252a55.jpg" alt="关于2017年国庆、中秋双节放假安排通知" title="关于2017年国庆、中秋双节放假安排通知"></div>-->
+                    <!--<div class=" text">-->
+                        <!--<span class="trans-3 block date">2017-10-09</span>-->
+                        <!--<h5 class="trans-3 ellipsis">关于2017年国庆、中秋双节放假安排通知</h5>-->
+                        <!--<p class="trans-3">值此国庆、中秋双节来临之际，感谢大家一如既往对湖北拓元建设的支持与厚爱。祝各位合作伙伴以及我们可爱的客户国庆、中秋双节快乐，阖家欢乐！ 根据国务院办公厅节假日放假安....</p>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</li>-->
+<!--<li class="col-lg-4 col-md-6 col-xs-12 wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.1s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">-->
+                <!--<a class="trans-8" href="/news/2017/0912/64.html" title="装修流程不规范，业主怎能另眼看">-->
+                    <!--<div class=" picbox"><img class="trans-12" src="images/1-1G00916252a55.jpg" alt="装修流程不规范，业主怎能另眼看" title="装修流程不规范，业主怎能另眼看"></div>-->
+                    <!--<div class="text">-->
+                        <!--<span class="trans-3 block date">2017-09-12</span>-->
+                        <!--<h5 class="trans-3 ellipsis">装修流程不规范，业主怎能另眼看</h5>-->
+                        <!--<p class="trans-3">在武汉乃至全国，装修都有一个非常大的通病，那就是业主在找到装修公司后，由于一些原因，很多设计好的流程不能及时的完成，然后最后导致整个项目出现问题，或者后期维护出现....</p>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--</ul>-->
+            <!--<div class="clear"></div><p>&nbsp;</p>		<p>&nbsp;</p>-->
+            <!--<div class="page text-center">-->
+                <!--<div class="page-m">-->
+                    <!--<li>首页</li>-->
+                    <!--<li class="thisclass">1</li>-->
+                    <!--<li><a href="list_12_2.html">2</a></li>-->
+                    <!--<li><a href="list_12_2.html">下页</a></li>-->
+                    <!--<li><a href="list_12_2.html">末页</a></li>-->
+
+                <!--</div>-->
+            <!--</div><p>&nbsp;</p>		<p>&nbsp;</p>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+<div class=" responsive process">
+    <div class="dots"></div>
+    <div class="container">
+        <div class="row">
+            <div class="pr found">
+                <div class="picbox wow scaleBigToSmall" data-wow-duration="0.5s" data-wow-delay="0s">
+                    <div class="pr ani1 wow scaleBigToSmall" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <img class="ani-img1" src="images/huudon_pic13.png">
+                        <img class="pa radius-half ani-img2" src="images/huudon_pic2.jpg">
+
+                    </div>
+                </div>
+                <div class="article wow scaleBigToSmall" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="text"><br><strong>湖北XX建设工程有限公司-工程装饰的领导者</strong>湖北拓元建设工程有限公司位于秀美江城武汉市武昌区徐东中心，作为武汉本地驰名的专业工装公司，已为武汉地区上万名业主提供了良好的装修服务。公司拥有建筑装饰工程专业承包贰级资质，消防设施专业承包贰级资质，建筑机电工程专业承包叁级资质，钢结构工程专业承包叁级资质，建筑装饰设计乙级资质，并通过质量管理体系认证、环境管理体系认证、职业健康安全管理体系认证。<br>
+                        <br>
+                        <a href='/about/company' style="float:right;color:#fff;"><b>详细了解</b></a>
+                        <br></div>
+                    <img class="hidden-md hidden-xs anibox wow zoomIn" src="images/abs.png" data-wow-duration="1s"
+                         data-wow-delay="1s">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--因为  bootstrap  是依赖 jquery  引用jquery文件-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="lib/jquery/jquery.js"></script>
+<!-- js 核心文件-->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
